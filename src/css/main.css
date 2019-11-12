@@ -14,3 +14,5 @@ Main style file
 @import "./components/_header.pcss";
 @import "./components/_first-screen.pcss";
 @import "./components/_about-ecro.pcss";
+
+@import "./components/_about-as.pcss";
