@@ -1,5 +1,8 @@
 .benefit{
+    display: flex;
+    flex-wrap: wrap;
    .caption{
+       width: 100%;
        span{
             color: #FFFFFF;
             font-size: 2.4em;
@@ -8,6 +11,26 @@
    .column-half{
        width: 50%;
    }
+   .img-wrapper{
+       max-width: 8.2em;
+       margin-left: auto;
+       margin-bottom: 5em;
+       img{
+           width: 100%;
+       }
+   }
+   .left-half{
+       padding-top: 4.1em;
+       .img-wrapper{
+           max-width: 6em;
+           margin: 9.5em auto 4.5em 0;
+       }
+   }
+   .right-half{
+        .benefit-item{
+            margin-left: auto;
+        }
+    }
    .benefit-item{
         width: 90%;
         padding: 2.2em 1em 2.5em;
@@ -15,9 +38,15 @@
         p{
             color: #FFFFFF;
             font-size: .9em;
+            margin-bottom: 1em;
+        }
+        .small-text{
+            font-size: .7em;
+            margin: 0;
         }
    }
    .img-wrap{
        text-align: center;
+       margin-bottom: 2.5em;
    }
 }
