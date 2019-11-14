@@ -2,3 +2,4 @@
 
 //=require ../../node_modules/jquery/dist/jquery.js
 //=require ../../node_modules/popper.js/dist/umd/popper.min.js
+//=require ../../node_modules/slick-carousel/slick/slick.min.js
