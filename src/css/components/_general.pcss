@@ -1,37 +1,63 @@
-*{box-sizing:border-box}
-html{
+* {
+    box-sizing: border-box
+}
+
+html {
     font-size: 20px;
 
 }
 
-body{
+body {
     font-family: 'Roboto', serif;
     font-weight: 400;
 
     font-size: calc(.333555rem + .481vw + .88vh);
     line-height: 1.37;
     background-color: #0C1231;
-    @media(min-width: 1440px){
+
+    @media(min-width: 1440px) {
         font-size: 21px;
     }
 }
 
-main{
+main {
     max-width: 100%;
-   
+
 }
 
-.navigation-blocs{
-    max-width: 1226px;
-    padding: 0 15px;
-    margin: 0 auto;
-    display: flex;
+.navigation-blocs {
+    position: relative;
+    .navigation-inner{
+        position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+            max-width: 1226px; 
+            padding: 0 15px;
+            margin: 0 auto; 
+            display: flex;
+        
+    }
 
-                .nav-block{
-                    max-width: 13.2em;
-                    width: 100%;
-                }
-                .content-block{
-                    width: 100%;
-                }
-            }
+    .content-block-wr{
+        overflow: hidden;
+    }
+.nav-block-inner{
+    height: 100%;
+}
+    .nav-block {
+        max-width: 13.2em;
+        width: 100%;
+    }
+
+    .content-block {
+        width: 100%;
+    }
+    .content-wr-inner{
+        max-width: 1226px; 
+        padding: 0 15px;
+        margin: 0 auto; 
+        display: flex;
+    }
+}
