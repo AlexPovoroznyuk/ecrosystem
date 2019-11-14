@@ -21,3 +21,5 @@ Main style file
 @import "./components/_benefit.pcss";
 
 @import "./components/_features.pcss";
+@import "./components/_ecro-academy.pcss";
+@import "./components/_academy-image.pcss";

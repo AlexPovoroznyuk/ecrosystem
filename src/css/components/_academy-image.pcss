@@ -1,0 +1,41 @@
+.academy-images-block {
+
+    display: flex;
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .right-part {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .img-wr {
+        &.first{
+            margin-bottom: 4.5em;
+        }
+        &.second{
+            align-self: flex-end;
+    margin-right: 1em;
+        }
+        &.third{
+            margin-top: 6em;
+        }
+        &.four{
+            align-self: flex-end;
+            margin-top: 3em;
+        }
+        width: 14.8em;
+        &:first-child{
+            width: 13.3em;
+
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+}
