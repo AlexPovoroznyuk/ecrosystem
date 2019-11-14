@@ -1,16 +1,55 @@
 .features{
+    position: relative;
+    padding-bottom: 11.6em;
+
+    p{
+        margin: 0;
+    }
     .caption{
+        margin-bottom: 2.1em; 
         p{
             color: #FFFFFF;
             font-size: 2.4em;
         }
     }
     .description{
+        margin-bottom: 7em;
         p{
             color: #FFFFFF;
             opacity: 0.7;
             font-size: .9em;
             max-width: 680px;
+        }
+    }
+    .features-wrap{
+        display: flex;
+        margin-bottom: 7em;
+    }
+    .features-item{
+        width: 33%;
+        img{
+            width: 2em;
+            margin-bottom: 0.7em;
+        }
+        p{
+            color: #FFFFFF;
+            font-size: .9em;
+            margin-bottom: .8em;
+        }
+        .description{
+            opacity: 0.7;
+            font-size: .75em;
+            max-width: 250px;
+        }
+    }
+    .img-wrapper{
+        position: absolute;
+        bottom: 0; 
+        right: -4em;
+        width: 100vw;
+        opacity: 0.2;
+        img{
+            width: 100%;
         }
     }
 }
