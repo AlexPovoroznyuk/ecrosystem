@@ -25,3 +25,5 @@ Main style file
 @import "./components/_academy-image.pcss";
 @import "./components/_p2p.pcss";
 @import "./components/_p2p-detail.pcss";
+
+@import "./components/_timeline-block.pcss";
