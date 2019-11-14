@@ -29,3 +29,4 @@ Main style file
 @import "./components/_integration.pcss";
 
 @import "./components/_timeline-block.pcss";
+@import "./components/_welcome.pcss";
