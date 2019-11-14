@@ -26,3 +26,4 @@ Main style file
 @import "./components/_p2p.pcss";
 @import "./components/_statistic.pcss";
 @import "./components/_p2p-detail.pcss";
+@import "./components/_integration.pcss";
