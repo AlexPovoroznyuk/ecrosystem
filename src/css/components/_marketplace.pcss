@@ -15,6 +15,16 @@ margin: auto;
     position: relative;
     margin-bottom: 6em;
     padding-left: 1.7em;
+    @media(max-width: 992px){
+        padding-top: 5em;
+        margin-bottom: 3em;
+    }
+    @media(max-width: 780px){
+        padding-top: 3em;
+    }
+    @media(max-width: 460px){
+        padding-left: 0;
+    }
     .logo-ecro{
         position: absolute;
         width: 100%;
@@ -23,10 +33,23 @@ margin: auto;
         img{
             width: 100%;
         }
+        @media(max-width: 992px){
+            width: 29em;
+    bottom: 1em;
+        }
+        @media(max-width: 460px){
+            width: 100%;
+            padding-right: 0;
+            bottom: 3em;
+        }
+        
     }
     .txt-part{
         display: flex;
         justify-content: space-between;
+        @media(max-width: 780px){
+            flex-direction: column;
+        }
     }
         .title-block{
             h3{
@@ -35,6 +58,9 @@ margin: auto;
                 font-weight: 200;
                 margin: 0;
                 color: #FFFFFF;
+                @media(max-width: 992px){
+                    font-size: 2em;
+                }
             }
         }
         .description-part{
@@ -58,5 +84,10 @@ margin: auto;
         }
         img{
             width: 109%;
+            @media(max-width: 460px){
+                position: relative;
+                width: 106%;
+                left: -.6em;
+            }
         }
     }
