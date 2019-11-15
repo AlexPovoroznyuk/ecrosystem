@@ -3,6 +3,9 @@
         position: relative;
         height: 105.9vh;
         padding-top: 6em;
+        @media(max-width: 992px) {
+            height: 100vh;
+        }
     h1{
         text-align: center;
         font-weight: 200;
@@ -11,7 +14,15 @@
         position: relative;
         letter-spacing: 1px;
         padding-right: 0.3em;
-        
+        @media(max-width: 992px){
+            padding: 0 15px;
+        }
+        @media(max-width: 620px){
+            font-size: 2.5em;
+        }
+        @media(max-width: 620px){
+            font-size: 2em;
+        }
     }
 
     .learn-more {
@@ -65,7 +76,7 @@
             width: auto;
             height: 100%;
 
-            @media(min-width: 1366px) {
+            @media(min-width: 992px) {
                 width: 100%;
                 height: auto;
             }
