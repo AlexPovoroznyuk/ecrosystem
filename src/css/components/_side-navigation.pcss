@@ -1,6 +1,6 @@
 .side-menu {
     padding: 0;
-    padding-top: 5em;
+    padding-top: 12.7em;
     position: sticky;
     top: 1em;
     .side-menu-item {
@@ -8,11 +8,11 @@
         list-style: none;
         position: relative;
         opacity: 0.5;
-        margin-bottom: 2.2em; 
+        margin-bottom: 1.8em; 
         transition: .3s;
-&.active{
-    opacity: 1;
-}
+        &.active{
+            opacity: 1;
+        }
         &::after{
             content: '';
             position: absolute;
@@ -21,18 +21,18 @@
             bottom: 0;
             margin: auto;
             width: 13px;
-height: 13px;
-border-radius: 50%;
-background-color: #fff;
+            height: 13px;
+            border-radius: 50%;
+            background-color: #fff;
         }
     }
 
     .side-menu-lnk {
         text-decoration: none;
-line-height: 1.1;
-font-weight: 200;
-font-size: .9em;
-color: #FFFFFF;
+        line-height: 1.1;
+        font-weight: 200;
+        font-size: .9em;
+        color: #FFFFFF;
         span {}
     }
 }
