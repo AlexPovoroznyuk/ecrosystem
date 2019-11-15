@@ -4,12 +4,14 @@ Main style file
 
 /* Put your vendor styles here */
 
+
+
 @import "../../node_modules/normalize.css/normalize.css";
 
 
 
 /* Put you custom styles below */
-
+@import "./components/fonts.css";
 @import "./components/_general.pcss";
 @import "./components/_header.pcss";
 @import "./components/_first-screen.pcss";
