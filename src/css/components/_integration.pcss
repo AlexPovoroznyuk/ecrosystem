@@ -2,7 +2,7 @@
     width: 90%;
     position: relative;
     padding-bottom: 8.5em;
-    margin-bottom: 8em;
+    margin-bottom: 3em;
     padding-left: 1.5em;
     p{
         margin: 0;
@@ -18,25 +18,32 @@
     .int-body{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .int-item{
-        width: 33%;
-        margin-bottom: 5.5em;
+        max-width: 33%;
+        width: fit-content;
+        margin-bottom: 5.3em;
         padding-right: 15px;
+        &:last-child{
+            margin-right: auto;
+            margin-left: 2em;
+        }
         img{
             width: 2em;
-            margin-bottom: .7em;
+            margin-bottom: .5em;
         }
         p{
             font-size: .9em;
             max-width: 250px;
+            font-weight: bold;
         }
     }
     .img-decor{
         width: 6em;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: -.5em;
+        right: -1em;
         img{
             width: 100%;
         }
