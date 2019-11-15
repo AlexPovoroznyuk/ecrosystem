@@ -30,3 +30,4 @@ Main style file
 
 @import "./components/_timeline-block.pcss";
 @import "./components/_welcome.pcss";
+@import "./components/_wrap-for-img.pcss";
