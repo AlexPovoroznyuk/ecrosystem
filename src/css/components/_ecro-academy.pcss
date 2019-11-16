@@ -3,13 +3,22 @@
     position: relative;
     margin-bottom: 6.4em;
     padding-left: 1.5em;
+    @media(max-width: 992px){
+        padding-left: 0; 
+        margin-bottom: 3em;
+    }
     .logo-ecro {
         position: absolute;
         width: 100%;
         bottom: -1.5em;
         top: 20%;
         right: 3.5em;
-
+        @media(max-width: 992px){
+            bottom: auto;
+        top: 37%;
+        right: 0;
+    text-align: center;
+        }
         .text-logo {
             font-weight: 600;
             font-size: 6em;
@@ -20,12 +29,23 @@
             position: absolute;
             right: 0;
             height: 6em;
+            @media(max-width: 992px){
+                height: auto;
+                font-size: 4em;
+                position: static;
+                right: auto;
+            }
         }
     }
 
     .txt-part {
         display: flex;
         justify-content: space-between;
+        @media(max-width: 992px){
+            flex-direction: column;
+            text-align: center;
+            padding-top: 2em;
+        }
     }
 
     .title-block {
@@ -35,12 +55,18 @@
             font-weight: 200;
             margin: 0;
             color: #FFFFFF;
+            @media(max-width: 992px){
+                font-size: 2em;
+            }
         }
     }
 
     .description-part {
         max-width: 19em;
         padding-top: 1.5em;
+        @media(max-width: 992px){
+            max-width: unset;
+        }
         p {
             font-size: .9em;
             line-height: 1.1;
@@ -57,8 +83,18 @@
     display: flex;
     margin-bottom: 5.3em;
     padding-left: 1.5em;
+    @media(max-width: 992px){
+        padding-left: 0;
+        flex-wrap: wrap;
+        margin-bottom: 3em;
+    }
     .img-wr {
         margin-right: 1em;
+        @media(max-width: 992px){
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 1em;
+        }
         img {
             width: 100%;
         }
@@ -66,11 +102,17 @@
 
     .ref-rectangle-wr {
         display: flex;
+        @media(max-width: 992px){
+            width: 100%;
+        }
     }
 
     .ref-rectangle {
         width: 6.2em;
         padding: .65em;
+        @media(max-width: 992px){
+            width: 50%;
+        }
         &.green {
             background: #039756;
             box-shadow: 0px 10px 14px #069D5F4D;
@@ -93,6 +135,12 @@
             font-size: .55em;
             display: block;
             font-weight: 600;
+            @media(max-width: 992px){
+                br{
+                    display: none;
+                }
+                font-size: .7em;
+            }
         }
 
         p {
@@ -103,6 +151,9 @@
             font-weight: 600;
             margin: 0;
             margin-top: 0.5em;
+            @media(max-width: 992px){
+                font-size: .9em;
+            }
         }
     }
 }
