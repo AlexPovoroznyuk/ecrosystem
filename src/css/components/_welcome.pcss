@@ -4,6 +4,7 @@
     max-width: 1224px;
     margin: 4.2em auto 0;
     padding: 10.7em 15px 16.5em;
+    z-index: 2;
     @media(max-width: 992px){
         margin: 0 auto;
         padding: 4em 15px 7em;
@@ -139,11 +140,93 @@
         bottom: 0;
         right: 0;
         left: 0;
-        z-index: -5;
+
         font-size: 0;
-        opacity: .3;
         img{
             width: 100%;
         }
     }
-}
+    .item-fs {
+        z-index: 14;
+        position: absolute;
+        
+        &.first{
+            left: 26.8%;
+            top: 81%;
+        }
+        &.second{
+            left: 40%;
+    top: 70%;
+        }
+        &.third{
+            left: 60.5%;
+            top: 65.56%;
+        }
+        &.four{
+            left: 69%;
+    top: 78%;
+        }
+        
+        .dot {
+            position: relative;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 1px solid #FFFFFF;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: auto;
+            }
+        }
+    
+        .line {
+            position: absolute;
+        bottom: calc(100% - 1px);
+        left: calc(100% - 1px);
+            svg {
+                display: block;
+            }
+    
+            path {
+            }
+        }
+    
+        .txt-wr {
+            font-size: 20px;
+            width: 9.2em;
+            left: calc(100% + 70px);
+        top: -31px;
+        position: absolute;
+        }
+    
+        .head {
+            span {
+                font-weight: 600;
+    font-size: .9em;
+    line-height: 1.27;
+                color: #FFFFFF;
+            }
+        }
+    
+        .txt {
+            span {
+                
+    
+    font-weight: 200;
+    font-size: .7em;
+    line-height: 1.2;
+                color: #FFFFFF;
+            }
+        }
+    }
+    
+    }
