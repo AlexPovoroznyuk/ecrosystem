@@ -15,7 +15,13 @@
         position: absolute;
         width: 86%;
         bottom: 19%;
-
+        @media(max-width: 460px){
+            width: 17em;
+            margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 6em;
+        }
         img {
             width: 100%;
         }
@@ -64,7 +70,9 @@
 .p2p-imgs {
     position: relative;
     margin-bottom: 15em;
-    /* padding-left: 1.5em; */
+    @media(max-width: 460px){
+        margin-bottom: 4em;
+    }
     .p2p-imgs-items {
         &.abs {
             position: absolute;

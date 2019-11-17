@@ -6,7 +6,11 @@
     @@include('./components/_header.html')
     <main class="">
         @@include('./components/_first-screen.html')
+        <div class="paralax-wr">
+            <div class="paralax-inner" data-speed="2.3">
 
+            
+        
         @@include('./components/_about-as.html')
         @@include('./components/_about-ecro.html')
         @@include('./components/_our-products.html')
@@ -21,7 +25,7 @@
             </div>
             <div class="content-block-wr">
                   <div id="marketplace"  class="scroll-block">  
-                <div class="content-wr-inner">
+                <div class="content-wr-inner parralax-parent">
                     <div class="nav-block">
 
                     </div>
@@ -37,8 +41,8 @@
                         @@include('./components/_benefit.html')
                     </div>
                 </div>
-                <div class="wrap-for-img">
-                    <img src="img/pics/benefit-img.png" alt="" />
+                <div class="wrap-for-img first-img">
+                    <img src="img/pics/benefit-img.jpg" alt="" />
                 </div>
             </div>
             <div id="ecro-academy"  class="scroll-block">  
@@ -46,7 +50,7 @@
                     <div class="nav-block">
 
                     </div>
-                    <div class="content-block">
+                    <div class="content-block parralax-parent">
                         @@include('./components/_ecro-academy.html')
                     </div>
                 </div>
@@ -54,7 +58,7 @@
                     <div class="nav-block">
 
                     </div>
-                    <div class="content-block">
+                    <div class="content-block parralax-parent">
                         @@include('./components/_academy-image.html')
                         
                     </div>
@@ -62,12 +66,12 @@
                 <div class="content-wr-inner">
                     <div class="nav-block">
                 </div>
-                    <div class="content-block">
+                    <div class="content-block parralax-parent">
                         @@include('./components/_features.html')
                     </div>
                 </div>
                 <div class="wrap-for-img">
-                    <img src="img/pics/after-features.png" alt="" />
+                    <img src="img/pics/after-features.jpg" alt="" />
                 </div>
             </div>
             <div id="p2p"  class="scroll-block">  
@@ -75,7 +79,7 @@
                     <div class="nav-block">
 
                     </div>
-                    <div class="content-block">
+                    <div class="content-block parralax-parent">
                         @@include('./components/_p2p.html')
                     </div>
                 </div>
@@ -83,7 +87,7 @@
                     <div class="nav-block">
 
                     </div>
-                    <div class="content-block">
+                    <div class="content-block parralax-parent">
                         @@include('./components/_p2p-detail.html')
                     </div>
                 </div>
@@ -93,7 +97,7 @@
                     <div class="nav-block">
 
                     </div>
-                    <div class="content-block">
+                    <div class="content-block parralax-parent">
                         @@include('./components/_statistic.html')
                     </div>
                 </div>
@@ -102,7 +106,7 @@
                         <div class="nav-block">
     
                         </div>
-                        <div class="content-block">
+                        <div class="content-block parralax-parent">
                                 @@include('./components/_integration.html')  
                         </div>
                     </div>
@@ -111,6 +115,8 @@
         </div>
         @@include('./components/_timeline-block.html')
         @@include('./components/_welcome.html') 
+    </div>
+</div>
     </main>
     @@include('./components/_footer.html')
 </body>

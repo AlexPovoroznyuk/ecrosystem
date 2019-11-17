@@ -2,8 +2,12 @@
     padding-bottom: 21em;
     position: relative;
     max-width: 1224px;
-    margin: 15.2em auto 0;
-    padding: 10.7em 15px 20.5em;
+    margin: 4.2em auto 0;
+    padding: 10.7em 15px 16.5em;
+    @media(max-width: 992px){
+        margin: 0 auto;
+        padding: 4em 15px 7em;
+    }
     p{
         color: #FFFFFF;
         text-align: center;
@@ -14,6 +18,9 @@
         p{
             
             font-size: 3em;
+            @media(max-width: 992px){
+                font-size: 1.9em;
+            }
         }
     } 
     .wel-body{
@@ -26,6 +33,9 @@
             font-size: 4em;
             opacity: 1;
             line-height: 1.2;
+            @media(max-width: 992px){
+                font-size: 3em;
+            }
         }
     } 
     form{
@@ -35,6 +45,12 @@
         max-width: 515px;
         margin: 0 auto;
         padding-left: 1.5em;
+        @media(max-width: 992px){
+            padding-left: 0;
+        }
+        @media(max-width: 380px){
+            flex-direction: column;
+        }
     } 
     .form-caption{
         width: 100%;
@@ -50,9 +66,15 @@
         width: 100%;
         color: #ffffff;
         font-size: .8em;
+        @media(max-width: 380px){
+            padding: .8em .5em;
+        }
     }
     label{
         width: 100%;
+        @media(max-width: 380px){
+            margin-bottom: 1em;
+        }
     }
     .submit{
         background: #096DF5;
@@ -62,7 +84,10 @@
         cursor: pointer;
         padding: .5em 1.5em;
         margin-left: .7em;
-        
+        @media(max-width: 380px){
+            padding: .75em .5em;
+            margin-left: 0;
+        }
         span{
             color: #FFFFFF;
             text-transform: uppercase;
@@ -75,6 +100,9 @@
         position: absolute;
         top: 0;
         right: 2em;
+        @media(max-width: 992px){
+            display: none;
+        }
         img{
             width: 100%;
         }
@@ -84,6 +112,9 @@
         width: 6em;
         top: -1em;
         left: 1.5em;
+        @media(max-width: 992px){
+            display: none;
+        }
         img{
             width: 100%;
         }
@@ -93,6 +124,9 @@
         width: 6em;
         bottom: 12em;
         right: 0;
+        @media(max-width: 992px){
+            display: none;
+        }
         img{
             width: 100%;
         }
