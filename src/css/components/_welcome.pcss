@@ -5,6 +5,9 @@
     margin: 4.2em auto 0;
     padding: 10.7em 15px 16.5em;
     z-index: 2;
+    @media(min-width: 1680px){
+        padding: 10.7em 15px 23.5em; 
+    }
     @media(max-width: 992px){
         margin: 0 auto;
         padding: 4em 15px 7em;
@@ -85,6 +88,7 @@
         cursor: pointer;
         padding: .5em 1.5em;
         margin-left: .7em;
+        min-width: 8em;
         @media(max-width: 380px){
             padding: .75em .5em;
             margin-left: 0;
@@ -147,6 +151,9 @@
         }
     }
     .item-fs {
+        @media(max-width: 992px){
+            display: none;
+        }
         z-index: 14;
         position: absolute;
         
@@ -173,6 +180,7 @@
             height: 18px;
             border-radius: 50%;
             border: 1px solid #FFFFFF;
+           
             &::after{
                 content: '';
                 position: absolute;

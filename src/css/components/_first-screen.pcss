@@ -73,7 +73,7 @@
             right: 0;
             height: 37em;
             width: 100%;
-            bottom: -4em;
+            bottom: 0;
             z-index: 3;
             background-image: linear-gradient(360deg, rgba(12, 18, 49, 1) 0%, rgba(92, 96, 117, 0) 100%);
         }
@@ -99,7 +99,13 @@
     z-index: 14;
     position: absolute;
     cursor: pointer;
+    @media(max-width: 992px){
+        display: none;
+    }
     &:hover{
+        .dot{
+            animation: none!important;
+        }
         .line{
             pointer-events: auto;
             svg{
@@ -120,18 +126,30 @@
     top: 45%;
     }
     &.second{
+        .dot{
+            animation: 1.5s dots .3s infinite;
+        }
         left: 18%;
         top: 55%;
     }
     &.third{
+        .dot{
+            animation: 1.5s dots 1.2s infinite;
+        }
         left: 27.5%;
         top: 67%;
     }
     &.four{
         left: 66%;
         top: 57%;
+        .dot{
+            animation: 1.5s dots .6s infinite;
+        }
     }
     &.fives{
+        .dot{
+            animation: 1.5s dots .9s infinite;
+        }
         left: 78.5%;
     top: 61%;
     .txt-wr{
@@ -151,6 +169,7 @@
         height: 18px;
         border-radius: 50%;
         border: 1px solid #FFFFFF;
+        animation: 1.5s dots infinite;
         &::after{
             content: '';
             position: absolute;
@@ -215,4 +234,21 @@ line-height: 1.2;
     }
 }
 
+}
+
+
+
+@keyframes dots{
+    0%{
+        transform: scale(1);
+    }
+    5%{
+        transform: scale(.85);
+    }
+    20%{
+        transform: scale(1.25);
+    }
+    30%{
+        transform: scale(1);
+    }
 }

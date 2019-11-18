@@ -1,3 +1,55 @@
+$(document).ready(function(){
+	var lang = $("#timer").attr("data-lang");
+if (document.getElementById("timer")) {
+	var getCountdown = function getCountdown() {
+
+		var current_date = new Date().getTime();
+		var seconds_left = (target_date - current_date) / 1000;
+
+		days = pad(parseInt(seconds_left / 86400));
+		seconds_left = seconds_left % 86400;
+
+		hours = pad(parseInt(seconds_left / 3600));
+		seconds_left = seconds_left % 3600;
+
+		minutes = pad(parseInt(seconds_left / 60));
+		seconds = pad(parseInt(seconds_left % 60));
+		console.log(lang)
+		if (target_date > current_date && lang == "English") {
+			console.log(days)
+			console.log(hours)
+			console.log(minutes)
+			countdown.innerHTML = `<span>&nbsp;${days}d&nbsp;</span><span>${hours}h&nbsp;</span><span>${minutes}m</span>`;
+		}
+		else if (target_date > current_date && lang == "Русский") {
+			countdown.innerHTML = `<span> ${days}д</span><span>${hours}ч</span><span>${minutes}м</span>`;
+		}
+		else if (target_date > current_date && lang == "한국인") {
+			countdown.innerHTML = `<span> ${days}일</span><span>${hours}시간</span><span>${minutes}분</span>`;
+		}
+		else {
+			countdown.innerHTML = "<span>00:</span><span>00:</span><span>00</span>";
+		}
+	};
+
+	var pad = function pad(n) {
+		return (n < 10 ? '0' : '') + n;
+	};
+
+	var target_date = 1577836800000;
+	var days, hours, minutes, seconds;
+
+	var countdown = document.getElementById("timer");
+	getCountdown();
+
+	setInterval(function () {
+		getCountdown();
+	}, 1000);
+}	
+})
+
+
+
 $(".timeline").slick({
     slidesToShow: 3,
 	arrows: false,
@@ -54,16 +106,6 @@ document.querySelectorAll('.parralax-element').forEach(function(element) {
 })
 }
 
-
-// document.querySelectorAll('.paralax-inner').forEach(function(element) {
-//     var ParalaxParent = element.closest('.paralax-wr');
-//     var ParalaxElement = element;
-//     var speedAnim = element.getAttribute('data-speed')
-//     document.addEventListener('scroll', function (e) {
-//         Paralax(ParalaxParent, ParalaxElement, 0.1, speedAnim, false,1);
-//     });
-// })
-
 document.addEventListener('scroll', function (e) {
 	var currentSection;
 	if(document.querySelector(".scroll-block") !== null){
@@ -81,3 +123,15 @@ document.addEventListener('scroll', function (e) {
 		});
 	}
 });
+
+$(document).ready(function() {
+	$('a[href^="#"]').click(function(e){
+
+		e.preventDefault()
+	var el = $(this).attr('href');
+
+	$('body').animate({
+	scrollTop: $(el).offset().top}, 2000);
+	// return false;
+	});
+	});

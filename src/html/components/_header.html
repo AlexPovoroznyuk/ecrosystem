@@ -2,11 +2,11 @@
     <div class="container">
         <div class="info-wrap">
             <div class="header-item logo-wr">
-                <img src="img/pics/eps.svg" alt=""/>
+                <img src="@@img-lnk-startimg/pics/eps.svg" alt=""/>
             </div>
             <div class="header-item m-none">
                 <p class="main-font">@@update:
-                    <span class="counter">10д 18ч 19м</span>
+                    <p class="counter" id="timer" data-lang="@@main-lang"></p>
                 </p>
             </div>
             <div class="header-item m-none">
@@ -17,9 +17,21 @@
             <button class="subscribe">
                 <span>@@subscribe-btn</span>
             </button>
+            <div class="lang-wr">
             <button class="language">
-                <span class="main-font">@@lang</span>
+                <span class="main-font">@@main-lang</span>
             </button>
+            <div class="lang-dropdown">
+                <ul>
+                    <li>
+                        <a href="@@second-lang-lnk">@@second-lang</a>
+                    </li>
+                    <li>
+                        <a href="@@third-lang-lnk">@@third-lang</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </div>
     </div>
 </header> 

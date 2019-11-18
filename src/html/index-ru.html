@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-@@include('./components/_head.html',{
-    "style-lnk" : ""
-})
+        @@include('./components/_head.html',{
+            "style-lnk" : "../"
+        })
 
 <body>
     @@include('./components/_header.html',{
-        "img-lnk-start" : "",
-        "update": "The site will be updated through",
-        "subscribe" : "Subscribe to notifications",
-        "subscribe-btn" : "Subscribe",
-        "main-lang": "English",
-        "second-lang-lnk" : "/ru",
-        "second-lang": "Русский",
-        "third-lang-lnk" : "/ko",
-        "third-lang": "한국인"
+        "update": "Сайт обновится через",
+        "subscribe" : "Подписывайся на уведомления",
+        "subscribe-btn" : "Подписаться",
+        "main-lang": "Русский",
+        "second-lang": "한국인",
+        "third-lang": "English",
+        "second-lang-lnk" : "/ko",
+        "third-lang-lnk" : "/",
+        "img-lnk-start" : "../"
     })
     <main class="">
         @@include('./components/_first-screen.html', {
-            "img-lnk-start" : "",
             "head" : "Smart Chain Generation",
-            "more" : "Learn more about ECRO System"
+            "more" : "Узнать больше о ECROSystem",
+            "img-lnk-start" : "../"
         })
         <div class="paralax-wr">
             <div class="paralax-inner" data-speed="2.3">
@@ -28,28 +28,28 @@
             
         
         @@include('./components/_about-as.html', {
-            "img-lnk-start" : "",
-            "head" : "About Us",
-            "description" : "ECRO System is a global multi-functional blockchain ecosystem for producers, investors, and consumers.",
-            "description2" : "A platform that produces, sells, consumes, educates, and entertains. The true digital universe.",
-            "comunity-head" : "ECRO System Community",
-            "comunity-description": "The association of blockchain enthusiasts from 57 countries of the world.<br>ECRO System financial, human and intellectual resources are used to develop the entire platform and each of its participants: production and development of projects, new international partnerships, additional educational and investment services, club and promotional privileges, a sales market for manufacturers, any goods and services for consumers."
+            "img-lnk-start" : "../",
+            "head" : "О нас",
+            "description" : "ECRO System - глобальная многофункциональная блокчейн-экосистема для производителей, инвесторов, и потребителей.",
+            "description2" : "Платформа, которая производит, продает, потребляет, обучает и развлекает. Настоящая цифровая Вселенная.",
+            "comunity-head" : "Комьюнити ECRO System",
+            "comunity-description": "Объединение блокчейн-энтузиастов из 57 стран мира.<br>Финансовые, человеческие и интеллектуальные ресурсы ECRO System используются для развития всей платформы и каждого ее участника: производство и развитие проектов, новые международные партнерские связи, дополнительные образовательные и инвестиционные сервисы, клубные и акционные привилегии, рынок сбыта для производителей, любые товары и услуги для потребителей."
         })
         @@include('./components/_about-ecro.html', {
-            "img-lnk-start" : "",
-            "head": "ECRO Ecosystem",
-            "desc": "Investors, manufacturers and consumers from around the world are gathered in one place. <br>The platform offers all users unlimited opportunities for development:",
-            "item1" : "Multifunctional marketplace with crypto-merchant and artificial intelligence, for the interaction of manufacturers, vendors and consumers",
-            "item2" : "Own academy, to receive relevant blockchain education, with special children's services",
-            "item3" : "Startup platform, to launch promising projects that can change the world for the better",
-            "item4" : "Crypto exchange, for traders and investors",
-            "item5" : "Exchange points, for P2P exchange, with the “Secure Payment” function",
-            "item6" : "Partner program, to create your own business and receive bonus rewards",
-            "item7" : "Investment and charity projects, to help environmental organizations, protect children and rare animals, for construction and development of engineering and medicine areas"
+            "img-lnk-start" : "../",
+            "head": "Экосистема Экро",
+            "desc": "В одном месте собраны инвесторы, производители и потребители со всего мира. <br> Платформа предлагает всем пользователям неограниченные возможности для развития:",
+            "item1" : "Многофункциональный маркетплейс с крипто-мерчантом и искусственным интеллектом, для взаимодействия производителей, вендоров и потребителей",
+            "item2" : "Собственная академия, для получения актуального блокчейн-образования, со специальными детскими сервисами",
+            "item3" : "Стартап-площадка, для запуска перспективных проектов, способных изменить мир к лучшему",
+            "item4" : "Крипто-биржа, для трейдеров и инвесторов",
+            "item5" : "Обменные пункты, для P2P-обмена, с функцией “Безопасного платежа”",
+            "item6" : "Партнерскую программу. для создания собственного бизнеса и получения бонусных вознаграждений",
+            "item7" : "Инвестиционные и благотворительные проекты, для помощи экологическим организациям, защиты детей и редких животных, строительства, развития инженерии и медицины"
         })
         @@include('./components/_our-products.html',{
-            "img-lnk-start" : "",
-            "head" : "Our Products",
+            "img-lnk-start" : "../",
+            "head" : "Наши продукты",
             "txt1" : "ECROAcademy",
             "txt2" : "BitcoBit"
         })
@@ -58,10 +58,9 @@
                 <div class="nav-block">
                     <div class="nav-block-inner">
                         @@include('./components/_side-navigation.html', {
-                            "img-lnk-start" : "",
                             "lnk1" : "ECRO Marketplace",
                             "lnk2" : "ECRO Academy",
-                            "lnk3" : "P2P Exchange",
+                            "lnk3" : "Р2Р-биржа",
                             "lnk4" : "BitcoBit"
                         })
                     </div>
@@ -91,10 +90,10 @@
                     </div>
                     <div class="content-block">
                         @@include('./components/_marketplace.html', {
-                            "img-lnk-start" : "",
+                            "img-lnk-start" : "../",
                             "head" : "ECRO Marketplace",
-                            "description":"Global online trading platform using blockchain and artificial intelligence technologies",
-                            "img" : "img/pics/ecro-img.png"
+                            "description":"Глобальная площадка для онлайн-торговли с использованием технологий блокчейн и искусственного интеллекта",
+                            "img" : "../img/pics/ecro-img.png"
                         })
                     </div>
                 </div>
@@ -103,15 +102,15 @@
 
                     </div>
                     <div class="content-block">
-                        @@include('./components/_benefit-en.html',{
-                            "img-lnk-start" : "",
-                            "head" : "Benefits for buyers:",
-                            "trader-head" : "Benefits for vendors:"
+                        @@include('./components/_benefit.html',{
+                            "img-lnk-start" : "../",
+                            "head" : "Выгоды покупателя:",
+                            "trader-head" : "Выгоды для продавца:"
                         })
                     </div>
                 </div>
                 <div class="wrap-for-img first-img">
-                    <img src="img/pics/benefit-img.jpg" alt="" />
+                    <img src="../img/pics/benefit-img.jpg" alt="" />
                 </div>
             </div>
             <div id="ecro-academy"  class="scroll-block">  
@@ -136,10 +135,10 @@
                     </div>
                     <div class="content-block parralax-parent">
                         @@include('./components/_ecro-academy.html', {
-                            "img-lnk-start" : "",
+                            "img-lnk-start" : "../",
                             "logo" : "ECROAcademy",
                             "head" : "ECRO Academy",
-                            "txt" : "An educational platform offering tools to improve financial literacy on blockchain issues",
+                            "txt" : "Образовательная платформа, предлагающая инструменты для улучшения финансовой грамотности в вопросах блокчейн",
                             "rect1" : "Депозиты за <br>Октябрь",
                             "rect2" : "Человек <br>в структуре"                            
                         })
@@ -151,11 +150,11 @@
                     </div>
                     <div class="content-block parralax-parent">
                         @@include('./components/_academy-image.html',{
-                            "img-lnk-start" : "",
-                            "img1" : "img/pics/img1.png",
-                            "img2" : "img/pics/img2.png",
-                            "img3" : "img/pics/img3.png",
-                            "img4" : "img/pics/img4.png"
+                            "img-lnk-start" : "../",
+                            "img1" : "../img/pics/img1.png",
+                            "img2" : "../img/pics/img2.png",
+                            "img3" : "../img/pics/img3.png",
+                            "img4" : "../img/pics/img4.png"
                         })
                         
                     </div>
@@ -165,21 +164,21 @@
                 </div>
                     <div class="content-block parralax-parent">
                         @@include('./components/_features.html', {
-                            "img-lnk-start" : "",
-                            "head" : "ECRO Academy Features:",
+                            "img-lnk-start" : "../",
+                            "head" : "Особенности Академии ECRO:",
                             "description": "Экросистем - посредническая, объединяющая комьюнити платформа, через которую будут реализованы услуги и проекты комьюнити.",
-                            "item1-head" : "Marketing training.",
-                            "item1-description" : "Events, webinars, conferences, seminars, presentations, interactive training centers.",
-                            "item2-head" : "Personnel training.",
-                            "item2-description" : "Partners and coordinators professional growth for expanding and scaling ECRO System projects."
+                            "item1-head" : "Маркетинговое обучение.",
+                            "item1-description" : "Ивенты, вебинары, конференции, семинары, презентации, интерактивные тренинговые центры.",
+                            "item2-head" : "Подготовка кадров.",
+                            "item2-description" : "Профессиональный рост партнеров и координаторов для расширения и масштабирования проектов ECRO System."
                         })
                     </div>
                 </div>
                 <div class="wrap-for-img">
-                    <img src="img/pics/after-features.jpg" alt="" />
+                    <img src="../img/pics/after-features.jpg" alt="" />
                 </div>
             </div>
-            <div id="p2p"  class="scroll-block"> 
+            <div id="p2p"  class="scroll-block">
                     <div class="geomethry geom1">
                             <div class="geomethry-inner">
                             <img src="img/pics/path.png" alt="">
@@ -189,21 +188,21 @@
                                 <div class="geomethry-inner">
                                 <img src="img/pics/circle2.png" alt="">
                             </div>
-                            </div> 
+                            </div>   
                 <div class="content-wr-inner">
                     <div class="nav-block">
 
                     </div>
                     <div class="content-block parralax-parent">
                         @@include('./components/_p2p.html', {
-                            "img-lnk-start" : "",
-                            "head" : "P2P Exchange",
-                            "description" : "Exchange platform for the direct crypto assets exchange between users with the “Secure Payment” function."
+                            "img-lnk-start" : "../",
+                            "head" : "P2P-биржа",
+                            "description" : "Обменная платформа для прямого обмена крипто-активами между пользователями с функцией “Безопасного платежа”"
                         })
                     </div>
                 </div>
                 <div class="wrap-for-img abs-wrap">
-                        <img src="img/pics/graph.png" alt="" />
+                        <img src="../img/pics/graph.png" alt="" />
                     </div>
                 <div class="content-wr-inner">
                     <div class="nav-block">
@@ -211,12 +210,12 @@
                     </div>
                     <div class="content-block parralax-parent">
                         @@include('./components/_p2p-detail.html',{
-                            "img-lnk-start" : "",
-                            "head" : "P2P is:",
-                            "list1" : "Complete safety",
-                            "list2" : "Decentralization",
-                            "list3" : "Crypto assets exchange from anywhere in the world at any time",
-                            "list4" : "Receiving funds in the most convenient way"
+                            "img-lnk-start" : "../",
+                            "head" : "P2P - это:",
+                            "list1" : "Полная безопасность",
+                            "list2" : "Децентрализация",
+                            "list3" : "Обмен крипто-активами из любой точки мира в любое время",
+                            "list4" : "Получение средств наиболее удобным способом"
                         })
                     </div>
                 </div>
@@ -243,9 +242,9 @@
                     </div>
                     <div class="content-block parralax-parent">
                         @@include('./components/_statistic.html', {
-                            "img-lnk-start" : "",
+                            "img-lnk-start" : "../",
                             "logo" : "BitcoBit",
-                            "txt" : "Convenient and functional exchange for trading, buying/selling various cryptocurrencies by the ECRO System users and the crypto community."
+                            "txt" : "Удобная и функциональная биржа для трейдинга, купли/продажи различных криптовалют пользователями ECRO System и крипто-комьюнити."
                         })
                     </div>
                 </div>
@@ -256,13 +255,13 @@
                         </div>
                         <div class="content-block parralax-parent">
                                 @@include('./components/_integration.html', {
-                                    "img-lnk-start" : "",
-                                    "head" : "Integration With ECRO Chain Products",
-                                    "txt1" : "Decentralized crypto wallet",
-                                    "txt2" : "Atomic swap technology",
-                                    "txt3" : "Coin constructor",
-                                    "txt4" : "Automatic listing on the platform and partner exchanges",
-                                    "txt5" : "Bitcoin and Ethereum blockchain compatibility"
+                                    "img-lnk-start" : "../",
+                                    "head" : "Интеграция с продуктами компании ECRO Chain",
+                                    "txt1" : "Децентрализованный крипто-кошелек",
+                                    "txt2" : "Технология атомарных свопов",
+                                    "txt3" : "Конструктор монет",
+                                    "txt4" : "Автоматический листинг на платформе и партнерских биржах",
+                                    "txt5" : "Совместимость с блокчейнами Bitcoin и Ethereum"
                                 })  
                         </div>
                     </div>
@@ -270,8 +269,8 @@
 </div>
         </div>
         @@include('./components/_timeline-block.html', {
-            "img-lnk-start" : "",
-            "head" : "ECRO System Roadmap",
+            "img-lnk-start" : "../",
+            "head" : "Дорожная карта ECRO System",
             "item-head1" : "Q4 2019",
             "item-description1" : "Начало работы ECROFund",
             "item-head2" : "Q4 2019",
@@ -306,21 +305,18 @@
             "item-description16" : "Обновление EcroP2P <br>Внедрение технологии ECROChange (ED-change) и запуск функционала атомарных свопов"          
         })
         @@include('./components/_welcome.html', {
-            "img-lnk-start" : "",
-            "head" : "Welcome To The Digital Universe!",
-            "description" : "ECRO System community is growing daily in 57 countries",
-            "subscribe" : "Subscribe to our updates",
-            "subscribe-btn" : "Subscribe",
-            "placeholder" : "Email"
+            "img-lnk-start" : "../",
+            "head" : "Добро пожаловать в цифровую Вселенную!",
+            "description" : "Комьюнити ECRO System растет каждый день в 57 странах мира",
+            "subscribe" : "Подписывайтесь на наши обновления",
+            "subscribe-btn" : "Подписаться",
+            "placeholder" : "Емейл"
         }) 
     </div>
 </div>
     </main>
-    @@include('./components/_modals.html',{
-
-    })
     @@include('./components/_footer.html',{
-        "script-lnk" : ""
+        "script-lnk" : "../"
     })
 </body>
 

@@ -1,11 +1,19 @@
 .about-as-container {
+    
     padding: 3em 0 5em;
     @media(max-width: 992px){
         padding: 3em 0;
     }
     .about-as-content {
-        margin-bottom: 10.37em;
+        margin-bottom: 14.37em;
         position: relative;
+        .geomethry{
+            z-index: 3;
+            .geomethry-inner{
+                top: 13%;
+                left: -27%;
+            }
+        }
         @media(max-width: 992px){
             margin-bottom: 3em;
         }
@@ -14,7 +22,7 @@
         position: absolute;
         right: 5em;
         width: 8.2em;
-        top: 0;
+        top: 15em;
         @media(max-width: 992px){
             display: none;
         }
@@ -72,6 +80,13 @@
     .comunity-service-wr {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        .geomethry{
+           .geomethry-inner{
+            top: 26%;
+            right: 5em;
+           }
+        }
         @media(max-width: 992px){
             flex-direction: column;
             
@@ -108,7 +123,7 @@
     }
 
     .comunity-service-description {
-        max-width: 22.2em;
+        max-width: 31.2em;
         @media(max-width: 992px){
              max-width: 37.77778em;
         margin: 0 auto 4em;

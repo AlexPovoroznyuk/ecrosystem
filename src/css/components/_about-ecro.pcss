@@ -1,9 +1,21 @@
+
+.about-ecro-outer{
+    margin-top: -11em;
+    position: relative;
+    .geomethry{
+        .geomethry-inner{
+            top: 49em;
+    right: -5em;
+        }
+    }
+}
 .about-ecro{
     max-width: 1224px;
     margin: 0 auto 7em;
     display:  flex;
-    padding: 3.8em 15px 5em;
-    margin-top: -11em;
+    padding: 3.8em 15px 0;
+    
+    
     @media(max-width: 992px){
         margin: 0 auto;
         flex-direction: column-reverse;
@@ -38,14 +50,13 @@
             }
         }
         .descript{
-            font-size: 0.9em;
-            letter-spacing: .65px;
-            line-height: 1.8;
+            font-size: 0.8em;
+            
         }
     }
     .right-part-wrap{
         background: linear-gradient(142deg, #00A7FF 0%, #0033BF 100%);
-        padding: 2.4em 1.6em 3.6em 2.6em;
+        padding: 2.4em 1.6em 3.6em 1.6em;
         position: relative;
         right: 0;
         left: -33%;
@@ -55,5 +66,29 @@
             width: 100%; 
             padding: 15px;
         }
+        .ecosystem-list{
+            padding: 0;
+                li{
+                    padding-left: 22px;
+                    position: relative;
+                    list-style: none;
+                    margin-bottom: .4em;
+                    &::after{
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        position: absolute;
+                        left: 0;
+                        top: .45em;
+                    }
+                    span{
+                        font-size: 0.8em;
+                        font-weight: 200;
+                        color: #FFFFFF;
+                    }
+                }
+                }
     }
 }

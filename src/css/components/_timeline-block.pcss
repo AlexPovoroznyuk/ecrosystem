@@ -1,6 +1,15 @@
 .timeline-block {
     margin-top: -6em;
     max-width: 100%;
+    position: relative;
+    z-index: 222;
+    .geomethry{
+        z-index: 22;
+      .geomethry-inner{
+        top: 9em;
+        left: -32%;
+      }
+    }
     @media(max-width: 992px){
         margin-top: 0; 
     }
@@ -60,7 +69,9 @@
         padding: 1.5em;
         outline: none;
         transition: .3s;
-        /* max-width: 16em; */
+        cursor: pointer;
+
+        vertical-align: top;
         &.slick-active {}
 
         .timeline-dot {
