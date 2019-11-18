@@ -231,7 +231,6 @@ $("form").on("submit", function(e){
 			data: formData,
 			
 			success : function( data ) {
-				onsole.log("succ")
 				$("button[type ='submit']").attr('disabled', false);
 					$(".modal").removeClass("active");
 					$("#thk-modal").addClass("active");

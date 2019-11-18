@@ -13,11 +13,15 @@
         padding-left: 30px;
         list-style: none;
         position: relative;
-        opacity: 1;
+        
+        
         margin-bottom: 1.8em; 
-        transition: .3s;
+       
         &.active{
+            .side-menu-lnk{
+            color: #FFFFFF;
             opacity: .5;
+        }
         }
         &::after{
             content: '';
@@ -34,11 +38,13 @@
     }
 
     .side-menu-lnk {
+         transition: .3s;
+        opacity: 1;
         text-decoration: none;
         line-height: 1.1;
         font-weight: 200;
         font-size: .9em;
-        color: #FFFFFF;
+        color: #3d425a;
         span {}
     }
 }
