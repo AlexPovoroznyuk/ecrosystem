@@ -20,7 +20,15 @@
         @@include('./components/_first-screen.html', {
             "head" : "Smart Chain Generation",
             "more" : "Узнать больше о ECROSystem",
-            "img-lnk-start" : "../"
+            "img-lnk-start" : "../",
+            "item-head1" : "ECROAcademy",
+            "item-desc1" : "Educational blockchain platform on financial literacy",
+            "item-head2" : "BitcoBit",
+            "item-desc2" : "Convenient and functional exchange for trading",
+            "item-head3" : "2AB2",
+            "item-desc3" : "Exchanging platform with the “Secure Payment” function",
+            "item-head4" : "ECRO",
+            "item-desc4" : "Global platform for online trading with integrated blockchain technology"
         })
         <div class="paralax-wr">
             <div class="paralax-inner" data-speed="2.3">
@@ -71,17 +79,17 @@
                   <div id="marketplace"  class="scroll-block">  
                         <div class="geomethry geom1">
                                 <div class="geomethry-inner">
-                                <img src="img/pics/path.png" alt="">
+                                <img src="../img/pics/path.png" alt="">
                             </div>
                             </div>
                             <div class="geomethry geom2">
                                     <div class="geomethry-inner">
-                                    <img src="img/pics/circle2.png" alt="">
+                                    <img src="../img/pics/circle2.png" alt="">
                                 </div>
                                 </div>
                                 <div class="geomethry geom3">
                                         <div class="geomethry-inner">
-                                        <img src="img/pics/circle2.png" alt="">
+                                        <img src="../img/pics/circle2.png" alt="">
                                     </div>
                                     </div>
                 <div class="content-wr-inner parralax-parent">
@@ -116,17 +124,17 @@
             <div id="ecro-academy"  class="scroll-block">  
                     <div class="geomethry geom1">
                             <div class="geomethry-inner">
-                            <img src="img/pics/path.png" alt="">
+                            <img src="../img/pics/path.png" alt="">
                         </div>
                         </div>
                         <div class="geomethry geom2">
                                 <div class="geomethry-inner">
-                                <img src="img/pics/circle1.png" alt="">
+                                <img src="../img/pics/circle1.png" alt="">
                             </div>
                             </div>
                             <div class="geomethry geom3">
                                     <div class="geomethry-inner">
-                                    <img src="img/pics/circle2.png" alt="">
+                                    <img src="../img/pics/circle2.png" alt="">
                                 </div>
                                 </div>
                 <div class="content-wr-inner">
@@ -138,6 +146,7 @@
                             "img-lnk-start" : "../",
                             "logo" : "ECROAcademy",
                             "head" : "ECRO Academy",
+                            "img" : "../pics/review-en.png",
                             "txt" : "Образовательная платформа, предлагающая инструменты для улучшения финансовой грамотности в вопросах блокчейн",
                             "rect1" : "Депозиты за <br>Октябрь",
                             "rect2" : "Человек <br>в структуре"                            
@@ -181,12 +190,12 @@
             <div id="p2p"  class="scroll-block">
                     <div class="geomethry geom1">
                             <div class="geomethry-inner">
-                            <img src="img/pics/path.png" alt="">
+                            <img src="../img/pics/path.png" alt="">
                         </div>
                         </div>
                         <div class="geomethry geom2">
                                 <div class="geomethry-inner">
-                                <img src="img/pics/circle2.png" alt="">
+                                <img src="../img/pics/circle2.png" alt="">
                             </div>
                             </div>   
                 <div class="content-wr-inner">
@@ -223,17 +232,17 @@
             <div id="statistic"  class="scroll-block"> 
                     <div class="geomethry geom1">
                             <div class="geomethry-inner">
-                            <img src="img/pics/path.png" alt="">
+                            <img src="../img/pics/path.png" alt="">
                         </div>
                         </div>
                         <div class="geomethry geom2">
                                 <div class="geomethry-inner">
-                                <img src="img/pics/circle1.png" alt="">
+                                <img src="../img/pics/circle1.png" alt="">
                             </div>
                             </div>
                             <div class="geomethry geom3">
                                     <div class="geomethry-inner">
-                                    <img src="img/pics/circle2.png" alt="">
+                                    <img src="../img/pics/circle2.png" alt="">
                                 </div>
                                 </div>
                 <div class="content-wr-inner">
@@ -315,6 +324,19 @@
     </div>
 </div>
     </main>
+    <script>
+            var EmptyError = "Поле обязательно для заполнения";
+            var EmailError = "Некорректный формат";
+            </script>
+            @@include('./components/_modals.html',{
+                "subsc-head": "Подписывайся на уведомления",
+                "subsc-descr" : "Буть в курсе всех обновлений ECROSystem",
+                "subsc-placeholder" : "Введите емейл",
+                "subsc-btn" : "Отправить",
+                "err-head" : "Произошла Ошибка",
+                "err-desc" : "Отправьте ваш емейл еще раз",
+                "succes-head" : "Вы подписаны на уведомления"
+            })
     @@include('./components/_footer.html',{
         "script-lnk" : "../"
     })

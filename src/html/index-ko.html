@@ -7,9 +7,9 @@
 <body>
     @@include('./components/_header.html',{
         "img-lnk-start" : "../",
-        "update": "Сайт обновится через",
-        "subscribe" : "Подписывайся на уведомления",
-        "subscribe-btn" : "Подписаться",
+        "update": "사이트 업데이트는 뒤",
+        "subscribe" : "업데이트 구독하십시오",
+        "subscribe-btn" : "팔로우",
         "main-lang": "한국인",
         "second-lang": "Русский",
         "third-lang": "English",
@@ -20,7 +20,15 @@
         @@include('./components/_first-screen.html', {
             "img-lnk-start" : "../",
             "head" : "스마트 체인 세대",
-            "more" : "에크로 시스템에 대해 더 알아보기"
+            "more" : "에크로 시스템에 대해 더 알아보기",
+            "item-head1" : "ECROAcademy",
+            "item-desc1" : "Educational blockchain platform on financial literacy",
+            "item-head2" : "BitcoBit",
+            "item-desc2" : "Convenient and functional exchange for trading",
+            "item-head3" : "2AB2",
+            "item-desc3" : "Exchanging platform with the “Secure Payment” function",
+            "item-head4" : "ECRO",
+            "item-desc4" : "Global platform for online trading with integrated blockchain technology"
         })
         <div class="paralax-wr">
             <div class="paralax-inner" data-speed="2.3">
@@ -69,17 +77,17 @@
                   <div id="marketplace"  class="scroll-block"> 
                         <div class="geomethry geom1">
                                 <div class="geomethry-inner">
-                                <img src="img/pics/path.png" alt="">
+                                <img src="../img/pics/path.png" alt="">
                             </div>
                             </div>
                             <div class="geomethry geom2">
                                     <div class="geomethry-inner">
-                                    <img src="img/pics/circle2.png" alt="">
+                                    <img src="../img/pics/circle2.png" alt="">
                                 </div>
                                 </div>
                                 <div class="geomethry geom3">
                                         <div class="geomethry-inner">
-                                        <img src="img/pics/circle2.png" alt="">
+                                        <img src="../img/pics/circle2.png" alt="">
                                     </div>
                                     </div> 
                 <div class="content-wr-inner parralax-parent">
@@ -114,17 +122,17 @@
             <div id="ecro-academy"  class="scroll-block"> 
                     <div class="geomethry geom1">
                             <div class="geomethry-inner">
-                            <img src="img/pics/path.png" alt="">
+                            <img src="../img/pics/path.png" alt="">
                         </div>
                         </div>
                         <div class="geomethry geom2">
                                 <div class="geomethry-inner">
-                                <img src="img/pics/circle1.png" alt="">
+                                <img src="../img/pics/circle1.png" alt="">
                             </div>
                             </div>
                             <div class="geomethry geom3">
                                     <div class="geomethry-inner">
-                                    <img src="img/pics/circle2.png" alt="">
+                                    <img src="../img/pics/circle2.png" alt="">
                                 </div>
                                 </div> 
                 <div class="content-wr-inner">
@@ -137,8 +145,9 @@
                             "logo" : "에크로 아카데미",
                             "head" : "에크로 아카데미",
                             "txt" : "블록체인 분야에 대한 재무 능력을 향상시키는 도구를 제공하는 교육 플랫폼입니다.",
-                            "rect1" : "Депозиты за <br>Октябрь",
-                            "rect2" : "Человек <br>в структуре"                            
+                            "img" : "../img/pics/review-en.png",
+                            "rect1" : "Deposits <br>for October", 
+                            "rect2" : "Partners in <br>the structure"                      
                         })
                     </div>
                 </div>
@@ -149,10 +158,10 @@
                     <div class="content-block parralax-parent">
                         @@include('./components/_academy-image.html',{
                             "img-lnk-start" : "../",
-                            "img1" : "../img/pics/img1.png",
-                            "img2" : "../img/pics/img2.png",
-                            "img3" : "../img/pics/img3.png",
-                            "img4" : "../img/pics/img4.png"
+                            "img1" : "../img/pics/img1-en.png",
+                            "img2" : "../img/pics/img2-en.png",
+                            "img3" : "../img/pics/img3-en.png",
+                            "img4" : "../img/pics/img4-en.png"
                         })
                         
                     </div>
@@ -179,12 +188,12 @@
             <div id="p2p"  class="scroll-block"> 
                     <div class="geomethry geom1">
                             <div class="geomethry-inner">
-                            <img src="img/pics/path.png" alt="">
+                            <img src="../img/pics/path.png" alt="">
                         </div>
                         </div>
                         <div class="geomethry geom2">
                                 <div class="geomethry-inner">
-                                <img src="img/pics/circle2.png" alt="">
+                                <img src="../img/pics/circle2.png" alt="">
                             </div>
                             </div>  
                 <div class="content-wr-inner">
@@ -221,17 +230,17 @@
             <div id="statistic"  class="scroll-block">
                     <div class="geomethry geom1">
                             <div class="geomethry-inner">
-                            <img src="img/pics/path.png" alt="">
+                            <img src="../img/pics/path.png" alt="">
                         </div>
                         </div>
                         <div class="geomethry geom2">
                                 <div class="geomethry-inner">
-                                <img src="img/pics/circle1.png" alt="">
+                                <img src="../img/pics/circle1.png" alt="">
                             </div>
                             </div>
                             <div class="geomethry geom3">
                                     <div class="geomethry-inner">
-                                    <img src="img/pics/circle2.png" alt="">
+                                    <img src="../img/pics/circle2.png" alt="">
                                 </div>
                                 </div> 
                 <div class="content-wr-inner">
@@ -313,6 +322,19 @@
     </div>
 </div>
     </main>
+    <script>
+            var EmptyError = "이 입력란은 비워 둘 수 없습니다";
+            var EmailError = "잘못된 형식의 이메일";
+            </script>
+            @@include('./components/_modals.html',{
+                "subsc-head": "업데이트 팔로우하세요",
+                "subsc-descr" : "모든 ECOSystem의 업데이트를 꿰차세요!",
+                "subsc-placeholder" : "E-MAIL 입력하세요",
+                "subsc-btn" : "보내기",
+                "err-head" : "에러 발생됨",
+                "err-desc" : "이메일을 다시 보내십시오",
+                "succes-head" : "Вы подписаны на уведомления"
+            })
     @@include('./components/_footer.html',{
         "script-lnk" : "../"
     })

@@ -20,7 +20,15 @@
         @@include('./components/_first-screen.html', {
             "img-lnk-start" : "",
             "head" : "Smart Chain Generation",
-            "more" : "Learn more about ECRO System"
+            "more" : "Learn more about ECRO System",
+            "item-head1" : "ECROAcademy",
+            "item-desc1" : "Educational blockchain platform on financial literacy",
+            "item-head2" : "BitcoBit",
+            "item-desc2" : "Convenient and functional exchange for trading",
+            "item-head3" : "2AB2",
+            "item-desc3" : "Exchanging platform with the “Secure Payment” function",
+            "item-head4" : "ECRO",
+            "item-desc4" : "Global platform for online trading with integrated blockchain technology"
         })
         <div class="paralax-wr">
             <div class="paralax-inner" data-speed="2.3">
@@ -139,9 +147,10 @@
                             "img-lnk-start" : "",
                             "logo" : "ECROAcademy",
                             "head" : "ECRO Academy",
+                            "img" : "img/pics/review-en.png",
                             "txt" : "An educational platform offering tools to improve financial literacy on blockchain issues",
-                            "rect1" : "Депозиты за <br>Октябрь",
-                            "rect2" : "Человек <br>в структуре"                            
+                            "rect1" : "Deposits <br>for October", 
+                            "rect2" : "Partners in <br>the structure"                           
                         })
                     </div>
                 </div>
@@ -152,10 +161,10 @@
                     <div class="content-block parralax-parent">
                         @@include('./components/_academy-image.html',{
                             "img-lnk-start" : "",
-                            "img1" : "img/pics/img1.png",
-                            "img2" : "img/pics/img2.png",
-                            "img3" : "img/pics/img3.png",
-                            "img4" : "img/pics/img4.png"
+                            "img1" : "img/pics/img1-en.png",
+                            "img2" : "img/pics/img2-en.png",
+                            "img3" : "img/pics/img3-en.png",
+                            "img4" : "img/pics/img4-en.png"
                         })
                         
                     </div>
@@ -316,8 +325,18 @@
     </div>
 </div>
     </main>
+    <script>
+    var EmptyError = "This field can't be empty";
+    var EmailError = "Incorrect format email";
+    </script>
     @@include('./components/_modals.html',{
-
+        "subsc-head": "Subscribe to our notifications",
+        "subsc-descr" : "Stay always informed about all the updates ECROSystem",
+        "subsc-placeholder" : "Введите емейл",
+        "subsc-btn" : "Send",
+        "err-head" : "An error occurred",
+        "err-desc" : "Send your email once again",
+        "succes-head" : "You have subscribed to notifications"
     })
     @@include('./components/_footer.html',{
         "script-lnk" : ""

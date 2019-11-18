@@ -14,18 +14,14 @@ if (document.getElementById("timer")) {
 
 		minutes = pad(parseInt(seconds_left / 60));
 		seconds = pad(parseInt(seconds_left % 60));
-		console.log(lang)
 		if (target_date > current_date && lang == "English") {
-			console.log(days)
-			console.log(hours)
-			console.log(minutes)
 			countdown.innerHTML = `<span>&nbsp;${days}d&nbsp;</span><span>${hours}h&nbsp;</span><span>${minutes}m</span>`;
 		}
 		else if (target_date > current_date && lang == "Русский") {
-			countdown.innerHTML = `<span> ${days}д</span><span>${hours}ч</span><span>${minutes}м</span>`;
+			countdown.innerHTML = `<span>&nbsp;${days}д&nbsp;</span><span>${hours}ч&nbsp;</span><span>${minutes}м&nbsp;</span>`;
 		}
 		else if (target_date > current_date && lang == "한국인") {
-			countdown.innerHTML = `<span> ${days}일</span><span>${hours}시간</span><span>${minutes}분</span>`;
+			countdown.innerHTML = `<span>&nbsp;${days}일&nbsp;</span><span>${hours}시간&nbsp;</span><span>${minutes}분&nbsp;</span>`;
 		}
 		else {
 			countdown.innerHTML = "<span>00:</span><span>00:</span><span>00</span>";
@@ -123,15 +119,134 @@ document.addEventListener('scroll', function (e) {
 		});
 	}
 });
+$(".subscribe-trigger").click(function(){
+	$("#subscribe-modal").addClass("active");
+	$("body").addClass("modal-open");
+})
 
-$(document).ready(function() {
-	$('a[href^="#"]').click(function(e){
 
-		e.preventDefault()
-	var el = $(this).attr('href');
+$(".close-trigger").click(function(){
+	$(".modal").removeClass("active");
+	$("body").removeClass("modal-open");
+})
 
-	$('body').animate({
-	scrollTop: $(el).offset().top}, 2000);
-	// return false;
+
+
+
+$(".reqiered-field").keyup(function(e){
+	if($(this).val() ==""){
+		$(this).closest(".input-item").addClass("validation-error");
+		$(this).closest(".input-item").find(".valid-error").html(EmptyError);
+		sendForm=false;
+	}
+	else if($(this).attr("name") == "email"){
+		if($(this).val() ==""){
+			$(this).closest(".input-item").addClass("validation-error");
+			$(this).closest(".input-item").find(".valid-error").html(EmptyError);
+			sendForm=false;
+		}
+		else if(!(/^[a-z0-9][a-z0-9-_\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\.[a-z0-9]{2,10}(?:\.[a-z]{2,10})?$/.test($(this).val()))){
+			$(this).closest(".input-item").addClass("validation-error");
+			$(this).closest(".input-item").find(".valid-error").html(EmailError);
+			sendForm=false;
+		}
+		else{
+			$(this).closest(".input-item").removeClass("validation-error");
+		}
+	}
+	else{
+		$(this).closest(".input-item").removeClass("validation-error");
+	}
+});
+
+
+$(".reqiered-field").focusout(function(e){
+		if($(this).val() ==""){
+		$(this).closest(".input-item").addClass("validation-error");
+		$(this).closest(".input-item").find(".valid-error").html(EmptyError);
+		sendForm=false;
+	}
+	else if($(this).attr("name") == "email"){
+		if($(this).val() ==""){
+			$(this).closest(".input-item").addClass("validation-error");
+			$(this).closest(".input-item").find(".valid-error").html(EmptyError);
+			sendForm=false;
+		}
+		else if(!(/^[a-z0-9][a-z0-9-_\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\.[a-z0-9]{2,10}(?:\.[a-z]{2,10})?$/.test($(this).val()))){
+			$(this).closest(".input-item").addClass("validation-error");
+			$(this).closest(".input-item").find(".valid-error").html(EmailError);
+			sendForm=false;
+		}
+		else{
+			$(this).closest(".input-item").removeClass("validation-error");
+		}
+	}
+	else{
+		$(this).closest(".input-item").removeClass("validation-error");
+	}
+});
+
+
+
+
+var sendForm;
+$("form").on("submit", function(e){
+	e.preventDefault();
+	var thisForm = $(this);
+	sendForm=true;
+	$(this).find(".reqiered-field").each(function(){
+		if($(this).val() ==""){
+			$(this).closest(".input-item").addClass("validation-error");
+			$(this).closest(".input-item").find(".valid-error").html(EmptyError);
+			sendForm=false;
+		}
+		else if($(this).attr("name") == "email"){
+			if($(this).val() ==""){
+				$(this).closest(".input-item").addClass("validation-error");
+				$(this).closest(".input-item").find(".valid-error").html(EmptyError);
+				sendForm=false;
+			}
+			else if(!(/^[a-z0-9][a-z0-9-_\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\.[a-z0-9]{2,10}(?:\.[a-z]{2,10})?$/.test($(this).val()))){
+				$(this).closest(".input-item").addClass("validation-error");
+				$(this).closest(".input-item").find(".valid-error").html(EmailError);
+				sendForm=false;
+			}
+			else{
+				$(this).closest(".input-item").removeClass("validation-error");
+			}
+		}
+		else{
+			$(this).closest(".input-item").removeClass("validation-error");
+		}
 	});
-	});
+	if(sendForm){
+		$("button[type ='submit']").attr('disabled', true);
+		var that = $(this);
+		var formData = new FormData(that.get(0));
+		$.ajax({
+			url: $(this).attr('action'),
+			type:'POST',
+			contentType: false,
+			processData: false,
+			data: formData,
+			
+			success : function( data ) {
+				onsole.log("succ")
+				$("button[type ='submit']").attr('disabled', false);
+					$(".modal").removeClass("active");
+					$("#thk-modal").addClass("active");
+					$("body").addClass("modal-open");	
+				
+				that.find(".form-input").each(function(){
+						$(this).val("");
+				});
+			},
+			error   : function( xhr, err , data ) {
+				$("button[type ='submit']").attr('disabled', false);
+				$(".modal").removeClass("active");
+					$("#err-modal").addClass("active");
+					$("body").addClass("modal-open");
+			}
+		});
+	}
+});

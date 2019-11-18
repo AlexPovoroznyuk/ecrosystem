@@ -14,7 +14,9 @@ body {
     font-size: calc(.333555rem + .481vw + .88vh);
     line-height: 1.37;
     background-color: #0C1231;
-
+    &.modal-open{
+        overflow: hidden;
+    }
     @media(min-width: 1440px) {
         font-size: 21px;
     }
@@ -46,6 +48,7 @@ main {
         padding: 0 15px;
         margin: 0 auto; 
         display: flex;
+        pointer-events: none;
         @media(max-width: 992px){
             display: none;
         } 
@@ -86,7 +89,31 @@ main {
     bottom: -900px;
     pointer-events: none;
     overflow: hidden;
+    @media(max-width: 992px){
+        display: none;
+    }
     .geomethry-inner{
         position: absolute;
+    }
+}
+
+
+.input-item{
+    position: relative;
+    width: 100%;
+    &.validation-error{
+        .valid-error{
+            opacity: 1;
+        }
+    }
+    .valid-error{
+        position: absolute;
+        bottom: -20px;
+    font-size: .6em;
+    color: #eb5757;
+    opacity: 0;
+    transition: .3s;
+    width: 100%;
+    left: 0;
     }
 }
