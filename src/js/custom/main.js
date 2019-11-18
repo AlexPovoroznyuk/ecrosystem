@@ -1,3 +1,9 @@
+$("#top").click(function(e){
+	
+	$(window).animate({ scrollTop: 0 }, 12333);
+	})
+
+
 $(document).ready(function(){
 	var lang = $("#timer").attr("data-lang");
 if (document.getElementById("timer")) {
@@ -249,3 +255,10 @@ $("form").on("submit", function(e){
 		});
 	}
 });
+
+
+$("#top").click(function(e){
+e.preventDefault();
+$("html, body").animate({ scrollTop: 0 }, "slow");
+})
+
